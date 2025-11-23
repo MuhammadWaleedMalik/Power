@@ -12,6 +12,10 @@ import { EstablishedLeader } from "./pages/EstablishedLeader";
 import { EmergingAndRisingLeader } from "./pages/EnergingAndRisingLeader";
 import LoginPage from "./pages/Login";
 import StoryDetail from "./components/UseCase/StoryDetail";
+import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookieSettings from "./pages/CookieSettings";
+import Terms from "./pages/Terms";
 
 function App() {
   return (
@@ -38,6 +42,10 @@ function App() {
                 <Route path="/establishedleader" element={<EstablishedLeader />} />
                 <Route path="/emergingandrisingleader" element={<EmergingAndRisingLeader />} />
                 <Route path="/story/:id" element={<StoryDetail />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/cookie-settings" element={<CookieSettings />} />
+                <Route path="/terms" element={<Terms />} />
               </Routes>
             </Layout>
           }
